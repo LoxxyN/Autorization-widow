@@ -1,0 +1,5 @@
+body {
+	max-width: 1440px;
+	max-height: 100%;
+	background: linear-gradient(45deg, #094db6, #d33f8d);
+}
