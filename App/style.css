@@ -1,27 +1,83 @@
 body {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+
 	height: 1000px;
 	max-width: 1440px;
 	max-height: 100%;
 	background: linear-gradient(45deg, #094db6, #d33f8d);
 }
 
+main {
+	justify-content: center;
+	align-items: center;
+}
+
 .app {
+	padding: 15px 40px 20px 55px;
 	height: 400px;
 	display: block;
-	max-width: 300px;
+	max-width: 200px;
 	justify-content: center;
 	align-items: center;
 	background-color: #fff;
 }
 
 .app > .app__into {
+	width: 176px;
+	justify-content: center;
+}
+
+.app > .app__into > h1 {
+	display: flex;
 	justify-content: center;
 }
 
 .input-text {
-	height: 50px;
-	width: 97.2%;
+	height: 40px;
+	max-width: 200px;
 	margin-bottom: 16px;
 	border: 1px solid #e6e6e6;
+	border-radius: 5px;
 	background-color: #e6e6e6;
+}
+
+.label-checkbox {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+label[for='userCheckbox'] {
+	font-weight: 500;
+	font-size: 15px;
+	color: #999999;
+}
+
+input[type='checkbox'] {
+	color: #d33f8d;
+	width: 15px;
+	height: 15px;
+	border: 3px solid #d33f8d;
+	&:checked {
+		accent-color: #d33f8d;
+	}
+	&:disabled {
+		border-color: #d33f8d;
+	}
+}
+
+#submitBtn {
+	background-color: #d33f8d;
+	border: 1px solid #d33f8d;
+	border-radius: 5px;
+	width: 170px;
+	height: 40px;
+	margin-top: 20px;
+
+	&:hover {
+		transition: 0.5s;
+		background-color: #333333;
+		border-color: #333333;
+	}
 }

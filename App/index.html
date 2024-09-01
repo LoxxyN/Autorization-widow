@@ -5,6 +5,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Autorization page</title>
 		<link rel="stylesheet" href="./style.css" />
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Raleway:ital@0;1&display=swap');
+		</style>
 	</head>
 	<body>
 		<main>
@@ -12,7 +15,7 @@
 				<div class="app__into">
 					<h1>Login</h1>
 					<form
-						action="mailto:html@yandex.ru"
+						action="vadimoff.ivanov@yandex.ru"
 						enctype="text/plain"
 						method="get"
 					>
@@ -35,8 +38,18 @@
 						/>
 						<div class="label-checkbox">
 							<input type="checkbox" name="userCheckbox" id="userCheckbox" />
-							<label for="userCheckbox"></label>
+							<label for="userCheckbox"> "Remeber me" </label>
 						</div>
+						<button id="submitBtn" type="submit">LOGIN</button>
+						<div class="autorization-change">
+							<button class="signUp-btn" id="signUp-btn-github" type="submit">
+								GitHub
+							</button>
+							<button class="signUp-btn" id="signUp-btn-google" type="submit">
+								Google
+							</button>
+						</div>
+						<p>Not a member?<a href="/">Sign up now</a></p>
 					</form>
 				</div>
 			</div>
