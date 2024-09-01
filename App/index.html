@@ -8,7 +8,38 @@
 	</head>
 	<body>
 		<main>
-			<div class="app"></div>
+			<div class="app">
+				<div class="app__into">
+					<h1>Login</h1>
+					<form
+						action="mailto:html@yandex.ru"
+						enctype="text/plain"
+						method="get"
+					>
+						<input
+							type="email"
+							name="userEmail"
+							id="userEmail"
+							class="input-text"
+							placeholder="Email"
+							required
+						/>
+						<br />
+						<input
+							type="password"
+							name="userPassword"
+							id="userPassword"
+							class="input-text"
+							placeholder="Password"
+							required
+						/>
+						<div class="label-checkbox">
+							<input type="checkbox" name="userCheckbox" id="userCheckbox" />
+							<label for="userCheckbox"></label>
+						</div>
+					</form>
+				</div>
+			</div>
 		</main>
 		<script src="./script.js"></script>
 	</body>

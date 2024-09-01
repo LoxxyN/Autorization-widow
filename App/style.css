@@ -1,5 +1,27 @@
 body {
+	height: 1000px;
 	max-width: 1440px;
 	max-height: 100%;
 	background: linear-gradient(45deg, #094db6, #d33f8d);
+}
+
+.app {
+	height: 400px;
+	display: block;
+	max-width: 300px;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff;
+}
+
+.app > .app__into {
+	justify-content: center;
+}
+
+.input-text {
+	height: 50px;
+	width: 97.2%;
+	margin-bottom: 16px;
+	border: 1px solid #e6e6e6;
+	background-color: #e6e6e6;
 }
