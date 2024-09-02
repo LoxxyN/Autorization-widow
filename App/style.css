@@ -2,6 +2,7 @@ body {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 400;
 
+	margin-inline: auto;
 	height: 1000px;
 	max-width: 1440px;
 	max-height: 100%;
@@ -11,46 +12,80 @@ body {
 main {
 	justify-content: center;
 	align-items: center;
+	display: flex;
 }
 
 .app {
-	padding: 15px 40px 20px 55px;
-	height: 400px;
-	display: block;
-	max-width: 200px;
+	margin-top: 100px;
+	/* padding: 30px 60px 60px 60px; */
+	height: 600px;
+	max-width: 450px;
+	display: flex;
 	justify-content: center;
 	align-items: center;
 	background-color: #fff;
 }
 
 .app > .app__into {
-	width: 176px;
+	width: 450px;
+	height: 600px;
 	justify-content: center;
 }
 
 .app > .app__into > h1 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	font-size: 48px;
 	display: flex;
 	justify-content: center;
 }
 
 .input-text {
-	height: 40px;
-	max-width: 200px;
-	margin-bottom: 16px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+
+	height: 45px;
+	width: 240px;
+
 	border: 1px solid #e6e6e6;
 	border-radius: 5px;
+
 	background-color: #e6e6e6;
+	background-position-x: 8px;
+	background-position-y: center;
+	background-repeat: no-repeat;
+
+	padding-left: 40px;
+	margin-inline: 83px;
+	margin-top: 20px;
+	margin-bottom: 6px;
+	&:focus {
+		transition: 0.4s;
+		background-position-x: 3px;
+	}
+}
+
+#userEmail {
+	background-image: url(./svg/Email.svg);
+}
+
+#userPassword {
+	background-image: url(./svg/lock.svg);
 }
 
 .label-checkbox {
+	margin-top: 10px;
+	margin-left: 112px;
 	display: flex;
 	align-items: center;
-	gap: 5px;
+	gap: 7px;
 }
 
 label[for='userCheckbox'] {
+	font-family: 'Raleway', sans-serif;
 	font-weight: 500;
-	font-size: 15px;
+	font-size: 17px;
 	color: #999999;
 }
 
@@ -60,7 +95,7 @@ input[type='checkbox'] {
 	height: 15px;
 	border: 3px solid #d33f8d;
 	&:checked {
-		accent-color: #d33f8d;
+		border-color: #d33f8d;
 	}
 	&:disabled {
 		border-color: #d33f8d;
@@ -68,16 +103,80 @@ input[type='checkbox'] {
 }
 
 #submitBtn {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 800;
+	font-size: 19px;
+
 	background-color: #d33f8d;
 	border: 1px solid #d33f8d;
-	border-radius: 5px;
-	width: 170px;
-	height: 40px;
-	margin-top: 20px;
-
+	border-radius: 7px;
+	width: 240px;
+	height: 50px;
+	margin: 25px 105px 35px 105px;
+	&:focus,
 	&:hover {
-		transition: 0.5s;
+		transition: 0.4s;
+		color: #ffffff;
 		background-color: #333333;
-		border-color: #333333;
+		border: 1px solid #e6e6e6;
+		border-radius: 10px;
+		scale: 0.97;
 	}
+}
+
+.signUp-btn {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+
+	border: 1px solid #cccccc;
+	border-radius: 5px;
+	height: 50px;
+	width: 150px;
+}
+
+#signUp-btn-github {
+	background-image: url(./svg/github.svg);
+	background-position-x: 6px;
+	background-position-y: center;
+	background-repeat: no-repeat;
+	padding-left: 40px;
+	margin-left: 50px;
+	&:focus,
+	&:hover {
+		transition: 0.4s;
+		color: #ffffff;
+		background-color: #333333;
+		border: 1px solid #e6e6e6;
+		border-radius: 10px;
+		scale: 0.97;
+	}
+}
+
+#signUp-btn-google {
+	background-image: url(./svg/google.svg);
+	background-position-x: 6px;
+	background-position-y: center;
+	background-repeat: no-repeat;
+	padding-left: 40px;
+	margin-left: 20px;
+	&:focus,
+	&:hover {
+		transition: 0.4s;
+		color: #ffffff;
+		background-color: #333333;
+		border: 1px solid #e6e6e6;
+		border-radius: 10px;
+		scale: 0.97;
+	}
+}
+
+.bottom-text {
+	font-family: 'Raleway', sans-serif;
+	font-size: 18px;
+	margin-top: 100px;
+	margin-left: 100px;
+}
+
+.bottom-text a {
 }
